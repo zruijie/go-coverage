@@ -1,0 +1,9 @@
+mode: set
+/Users/linctex/go/src/go-coverage/myprogram.go:11.13,21.2 4 1
+go-coverage/greetings/greetings.go:3.23,5.2 1 1
+go-coverage/mymath/mymath.go:3.27,4.15 1 0
+go-coverage/mymath/mymath.go:4.15,6.3 1 0
+go-coverage/mymath/mymath.go:7.2,7.14 1 0
+go-coverage/mymath/mymath.go:10.29,11.14 1 1
+go-coverage/mymath/mymath.go:11.14,13.3 1 1
+go-coverage/mymath/mymath.go:14.2,14.14 1 1
