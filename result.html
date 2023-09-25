@@ -1,335 +1,118 @@
 
-
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>Coverage Report</title>
-		<meta charset="utf-8" />
-        
-        <style type="text/css">
-        body {
-    background-color: #fff;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>mymath: Go Coverage Report</title>
+		<style>
+			body {
+				background: black;
+				color: rgb(80, 80, 80);
+			}
+			body, pre, #legend span {
+				font-family: Menlo, monospace;
+				font-weight: bold;
+			}
+			#topbar {
+				background: black;
+				position: fixed;
+				top: 0; left: 0; right: 0;
+				height: 42px;
+				border-bottom: 1px solid rgb(80, 80, 80);
+			}
+			#content {
+				margin-top: 50px;
+			}
+			#nav, #legend {
+				float: left;
+				margin-left: 10px;
+			}
+			#legend {
+				margin-top: 12px;
+			}
+			#nav {
+				margin-top: 10px;
+			}
+			#legend span {
+				margin: 0 5px;
+			}
+			.cov0 { color: rgb(192, 0, 0) }
+.cov1 { color: rgb(128, 128, 128) }
+.cov2 { color: rgb(116, 140, 131) }
+.cov3 { color: rgb(104, 152, 134) }
+.cov4 { color: rgb(92, 164, 137) }
+.cov5 { color: rgb(80, 176, 140) }
+.cov6 { color: rgb(68, 188, 143) }
+.cov7 { color: rgb(56, 200, 146) }
+.cov8 { color: rgb(44, 212, 149) }
+.cov9 { color: rgb(32, 224, 152) }
+.cov10 { color: rgb(20, 236, 155) }
 
-table {
-    margin-left: 10px;
-    border-collapse: collapse;
-}
-
-td {
-    background-color: #fff;
-    padding: 2px;
-}
-
-table.overview td {
-    padding-right: 20px;
-}
-
-td.percent,
-td.linecount {
-    text-align: right;
-}
-
-div.package,
-#totalcov {
-    color: #fff;
-    background-color: #375eab;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 5px 5px 5px 5px;
-}
-
-div.package,
-#totalcov {
-    float: right;
-    right: 10px;
-}
-
-#totalcov {
-    top: 10px;
-    position: relative;
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #375eab;
-    clear: both;
-}
-
-#summaryWrapper {
-    position: fixed;
-    top: 10px;
-    float: right;
-    right: 10px;
-
-}
-
-span.packageTotal {
-    float: right;
-    color: #000;
-}
-
-#doctitle {
-    background-color: #fff;
-    font-size: 24px;
-    margin-top: 20px;
-    margin-left: 10px;
-    color: #375eab;
-    font-weight: bold;
-}
-
-#about {
-    margin-left: 18px;
-    font-size: 10px;
-}
-
-.functitle,
-.funcname {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: #375eab;
-}
-
-.funcname {
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    padding: 2px 5px 5px;
-    background-color: #e0ebf5;
-}
-
-table.listing {
-    margin-left: 10px;
-}
-
-table.listing td {
-    padding: 0px;
-    font-size: 12px;
-    background-color: #eee;
-    vertical-align: top;
-    padding-left: 10px;
-    border-bottom: 1px solid #fff;
-}
-
-table.listing td:first-child {
-    text-align: right;
-    font-weight: bold;
-    vertical-align: center;
-}
-
-table.listing tr.miss td {
-    background-color: #FFBBB8;
-}
-
-table.listing tr:last-child td {
-    font-weight: normal;
-    color: #000;
-}
-
-table.listing tr:last-child td:first-child {
-    font-weight: bold;
-}
-
-.info {
-    margin-left: 10px;
-}
-
-.info code {}
-
-pre {
-    margin: 1px;
-}
-
-pre.cmd {
-    background-color: #e9e9e9;
-    border-radius: 5px 5px 5px 5px;
-    padding: 10px;
-    margin: 20px;
-    line-height: 18px;
-    font-size: 14px;
-}
-
-a {
-    text-decoration: none;
-    color: #375eab;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p {
-    margin-left: 10px;
-}
-        </style>
-        
+		</style>
 	</head>
 	<body>
-		<div id="doctitle">Coverage Report</div>
-        
-        <div id="about">Generated on Mon, 25 Sep 2023 15:24:43 CST with <a href="https://github.com/matm/gocov-html">gocov-html</a></div>
-        
-        
-        
-        <div id="pkg_go-coverage/mymath" class="funcname">
-            Package Overview: go-coverage/mymath
-            <span class="packageTotal">83.3%</span>
-        </div>
-        <p>Please select a function to see what's left for testing.</p>
+		<div id="topbar">
+			<div id="nav">
+				<select id="files">
+				
+				<option value="file0">go-coverage/mymath/mymath.go (83.3%)</option>
+				
+				</select>
+			</div>
+			<div id="legend">
+				<span>not tracked</span>
+			
+				<span class="cov0">not covered</span>
+				<span class="cov8">covered</span>
+			
+			</div>
+		</div>
+		<div id="content">
+		
+		<pre class="file" id="file0" style="display: none">package mymath
 
-        <table class="overview">
-        
-            <tr id="s_fn_IsBigNum">
-                <td>
-                    <code><a href="#fn_IsBigNum">IsBigNum(...)</a></code>
-                </td>
-                <td>
-                    <code>go-coverage/mymath/mymath.go</code>
-                </td>
-                <td class="percent">
-                    <code>100.0%</code>
-                </td>
-                <td class="linecount">
-                    <code>3/3</code>
-                </td>
-            </tr>
-        
-            <tr id="s_fn_IsSmallNum">
-                <td>
-                    <code><a href="#fn_IsSmallNum">IsSmallNum(...)</a></code>
-                </td>
-                <td>
-                    <code>go-coverage/mymath/mymath.go</code>
-                </td>
-                <td class="percent">
-                    <code>66.7%</code>
-                </td>
-                <td class="linecount">
-                    <code>2/3</code>
-                </td>
-            </tr>
-        
-        </table>
+func IsBigNum(n int) bool <span class="cov8" title="1">{
+        if n &gt;= 1000 </span><span class="cov8" title="1">{
+                return true
+        }</span>
+        <span class="cov8" title="1">return false</span>
+}
 
-        
-        
-        <div class="funcname" id="fn_IsBigNum">func IsBigNum</div>
-        <div class="info">
-            <a href="#s_fn_IsBigNum">Back</a>
-            <p>In <code>/Users/linctex/go/src/go-coverage/mymath/mymath.go</code>:</p>
-        </div>
-        <table class="listing">
-            
-            <tr>
-                <td>3</td>
-                <td>
-                    <code><pre>func IsBigNum(n int) bool {</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>4</td>
-                <td>
-                    <code><pre>        if n &gt;= 1000 {</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>5</td>
-                <td>
-                    <code><pre>                return true</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>6</td>
-                <td>
-                    <code><pre>        }</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>7</td>
-                <td>
-                    <code><pre>        return false</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>8</td>
-                <td>
-                    <code><pre>}</pre></code>
-                </td>
-            </tr>
-            
-        </table>
-        
-        <div class="funcname" id="fn_IsSmallNum">func IsSmallNum</div>
-        <div class="info">
-            <a href="#s_fn_IsSmallNum">Back</a>
-            <p>In <code>/Users/linctex/go/src/go-coverage/mymath/mymath.go</code>:</p>
-        </div>
-        <table class="listing">
-            
-            <tr>
-                <td>10</td>
-                <td>
-                    <code><pre>func IsSmallNum(n int) bool {</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>11</td>
-                <td>
-                    <code><pre>        if n &lt; 1000 {</pre></code>
-                </td>
-            </tr>
-            
-            <tr class="miss">
-                <td>12</td>
-                <td>
-                    <code><pre>                return true</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>13</td>
-                <td>
-                    <code><pre>        }</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>14</td>
-                <td>
-                    <code><pre>        return false</pre></code>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>15</td>
-                <td>
-                    <code><pre>}</pre></code>
-                </td>
-            </tr>
-            
-        </table>
-         
-
-        <!--    Can be parsed by external script
-                PACKAGE:go-coverage/mymath DONE:83.3
-        -->
-         
-
-        <div id="summaryWrapper">
-        
-            
-            <div class="package">go-coverage/mymath</div>
-            <div id="totalcov">83.3%</div>
-         
-        </div>
-         
-        
+func IsSmallNum(n int) bool <span class="cov8" title="1">{
+        if n &lt; 1000 </span><span class="cov0" title="0">{
+                return true
+        }</span>
+        <span class="cov8" title="1">return false</span>
+}
+</pre>
+		
+		</div>
 	</body>
+	<script>
+	(function() {
+		var files = document.getElementById('files');
+		var visible;
+		files.addEventListener('change', onChange, false);
+		function select(part) {
+			if (visible)
+				visible.style.display = 'none';
+			visible = document.getElementById(part);
+			if (!visible)
+				return;
+			files.value = part;
+			visible.style.display = 'block';
+			location.hash = part;
+		}
+		function onChange() {
+			select(files.value);
+			window.scrollTo(0, 0);
+		}
+		if (location.hash != "") {
+			select(location.hash.substr(1));
+		}
+		if (!visible) {
+			select("file0");
+		}
+	})();
+	</script>
 </html>
